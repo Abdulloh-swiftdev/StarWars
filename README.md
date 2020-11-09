@@ -7,5 +7,5 @@ Star Wars app with free api. Here is an api: https://swapi.dev/api
 
 ![Simulator Screen Shot - iPhone SE (2nd generation) - 2020-11-09 at 14 27 57](https://user-images.githubusercontent.com/74178243/98523738-1190ae80-2298-11eb-9186-49a6cad46b90.png)
 
+![Screen Recording](https://user-images.githubusercontent.com/74178243/98525005-b364cb00-2299-11eb-817f-f1fba7f12553.gif)
 
-![Screen Recording 2020-11-09 at 14 32 25](https://user-images.githubusercontent.com/74178243/98524163-b0b5a600-2298-11eb-9965-04c41018f6fb.GIF)
