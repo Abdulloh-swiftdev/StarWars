@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--CharactersVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CharactersVC" customModule="Star_Wars_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Untitled design" translatesAutoresizingMaskIntoConstraints="NO" id="Nm8-KX-6n2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BAW-IG-xYc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Unknown_preview_rev_1" translatesAutoresizingMaskIntoConstraints="NO" id="cgg-IX-Q76">
+                                        <rect key="frame" x="123.5" y="8" width="128" height="74"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="128" id="Xbd-6I-Zzf"/>
+                                            <constraint firstAttribute="height" constant="74" id="q4g-bK-2th"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.003796722041" green="0.00049742078410000003" blue="0.26978608970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="cgg-IX-Q76" firstAttribute="centerY" secondItem="BAW-IG-xYc" secondAttribute="centerY" id="OWf-hW-YAh"/>
+                                    <constraint firstAttribute="height" constant="90" id="Z87-fT-MQF"/>
+                                    <constraint firstItem="cgg-IX-Q76" firstAttribute="centerX" secondItem="BAW-IG-xYc" secondAttribute="centerX" id="x5w-5c-yfC"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZRM-jJ-xMV">
+                                <rect key="frame" x="16" y="98" width="343" height="569"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="NameCell" rowHeight="75" id="eYa-0c-QZr" customClass="CharacterCell" customModule="Star_Wars_app" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eYa-0c-QZr" id="CsW-Gx-Tsq">
+                                            <rect key="frame" x="0.0" y="0.0" width="316" height="75"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Luyke Skaywaker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wsd-mL-a0A">
+                                                    <rect key="frame" x="16" y="11" width="292" height="53"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="25"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="wsd-mL-a0A" firstAttribute="top" secondItem="CsW-Gx-Tsq" secondAttribute="topMargin" id="Z8c-Et-m1e"/>
+                                                <constraint firstItem="wsd-mL-a0A" firstAttribute="leading" secondItem="CsW-Gx-Tsq" secondAttribute="leadingMargin" id="bd3-Ke-0N1"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="wsd-mL-a0A" secondAttribute="trailing" id="ik5-iS-rHr"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="wsd-mL-a0A" secondAttribute="bottom" id="kzH-FQ-7Gd"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="nameLbl" destination="wsd-mL-a0A" id="L5W-3F-gZO"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Nm8-KX-6n2" secondAttribute="trailing" id="8ds-mu-Q4g"/>
+                            <constraint firstItem="ZRM-jJ-xMV" firstAttribute="top" secondItem="BAW-IG-xYc" secondAttribute="bottom" constant="8" id="9Tt-MH-Szq"/>
+                            <constraint firstItem="BAW-IG-xYc" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Gtl-GS-t54"/>
+                            <constraint firstItem="BAW-IG-xYc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="KE4-oF-34Y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZRM-jJ-xMV" secondAttribute="trailing" constant="16" id="MF5-lP-wTl"/>
+                            <constraint firstItem="BAW-IG-xYc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MT9-ql-a9i"/>
+                            <constraint firstAttribute="bottom" secondItem="ZRM-jJ-xMV" secondAttribute="bottom" id="Tbd-D2-XQZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Nm8-KX-6n2" secondAttribute="bottom" id="fxx-wk-SEt"/>
+                            <constraint firstItem="Nm8-KX-6n2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="mUl-fH-4hm"/>
+                            <constraint firstItem="ZRM-jJ-xMV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="pSd-TG-g2k"/>
+                            <constraint firstItem="Nm8-KX-6n2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rja-3j-aMt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="ZRM-jJ-xMV" id="MwV-7T-78p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="133.5832083958021"/>
+        </scene>
+        <!--ParametersVC-->
+        <scene sceneID="2To-US-rbT">
+            <objects>
+                <viewController storyboardIdentifier="ParametersVC" id="Poo-RL-21j" customClass="ParametersVC" customModule="Star_Wars_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VwZ-UX-Wnd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Untitled design" translatesAutoresizingMaskIntoConstraints="NO" id="0Tf-v7-75B">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sZK-ZY-xuU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="Wh5-Wk-dL7">
+                                        <rect key="frame" x="16" y="28.5" width="343" height="33"/>
+                                        <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9p-oQ-hIK">
+                                        <rect key="frame" x="8" y="27.5" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="35" id="Ha8-xm-zic"/>
+                                            <constraint firstAttribute="height" constant="35" id="iYV-e8-Vzi"/>
+                                        </constraints>
+                                        <state key="normal" image="Untitled design-2_preview_rev_1"/>
+                                        <connections>
+                                            <action selector="backBtnWasPressed:" destination="Poo-RL-21j" eventType="touchUpInside" id="VSk-EM-1VJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.003796722041" green="0.00049742078410000003" blue="0.26978608970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Wh5-Wk-dL7" firstAttribute="centerY" secondItem="sZK-ZY-xuU" secondAttribute="centerY" id="28W-Az-a9y"/>
+                                    <constraint firstItem="Wh5-Wk-dL7" firstAttribute="centerX" secondItem="sZK-ZY-xuU" secondAttribute="centerX" id="SZM-2Y-0hf"/>
+                                    <constraint firstItem="v9p-oQ-hIK" firstAttribute="leading" secondItem="sZK-ZY-xuU" secondAttribute="leading" constant="8" id="Vd6-M3-JQF"/>
+                                    <constraint firstItem="v9p-oQ-hIK" firstAttribute="centerY" secondItem="sZK-ZY-xuU" secondAttribute="centerY" id="ejv-no-HoO"/>
+                                    <constraint firstAttribute="trailing" secondItem="Wh5-Wk-dL7" secondAttribute="trailing" constant="16" id="gZh-gI-gXv"/>
+                                    <constraint firstAttribute="height" constant="90" id="r2T-Ed-okM"/>
+                                    <constraint firstItem="Wh5-Wk-dL7" firstAttribute="leading" secondItem="sZK-ZY-xuU" secondAttribute="leading" constant="16" id="vcC-QI-399"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sq9-3b-RXo">
+                                <rect key="frame" x="16" y="106" width="343" height="323"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="XZ4-91-qGO">
+                                        <rect key="frame" x="208" y="0.0" width="135" height="323"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="172" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gzy-1y-thv">
+                                                <rect key="frame" x="0.0" y="0.0" width="135" height="29"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="20"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="77" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLk-bU-4L8">
+                                                <rect key="frame" x="0.0" y="49" width="135" height="29"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="20"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blond" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mDZ-Bs-oT7">
+                                                <rect key="frame" x="0.0" y="98" width="135" height="29"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="20"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fair" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvJ-XP-6dR">
+                                                <rect key="frame" x="0.0" y="147" width="135" height="29"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="20"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4nG-xL-DyU">
+                                                <rect key="frame" x="0.0" y="196" width="135" height="29"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="20"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11BBY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsK-y9-7iZ">
+                                                <rect key="frame" x="0.0" y="245" width="135" height="29"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="20"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Male" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Gd-0S-KCd">
+                                                <rect key="frame" x="0.0" y="294" width="135" height="29"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="135" id="adg-sd-fZj"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="20"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="T2C-qD-wT7">
+                                        <rect key="frame" x="0.0" y="0.0" width="135" height="323"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDQ-m5-2VY">
+                                                <rect key="frame" x="0.0" y="0.0" width="135" height="29"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="20"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mass" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFp-6B-AAT">
+                                                <rect key="frame" x="0.0" y="49" width="135" height="29"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="20"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heir Color" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="olR-5f-c1J">
+                                                <rect key="frame" x="0.0" y="98" width="135" height="29"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="20"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skin Color" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrZ-Xf-0Tc">
+                                                <rect key="frame" x="0.0" y="147" width="135" height="29"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="20"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eye Color" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2id-V1-HIm">
+                                                <rect key="frame" x="0.0" y="196" width="135" height="29"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="20"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birth Year" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxf-ho-OSJ">
+                                                <rect key="frame" x="0.0" y="245" width="135" height="29"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="20"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0k-dI-DmZ">
+                                                <rect key="frame" x="0.0" y="294" width="135" height="29"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="135" id="iCc-Ql-1cj"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="20"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="XZ4-91-qGO" secondAttribute="bottom" id="48f-rf-31e"/>
+                                    <constraint firstItem="T2C-qD-wT7" firstAttribute="leading" secondItem="Sq9-3b-RXo" secondAttribute="leading" id="5TY-Xg-z6l"/>
+                                    <constraint firstAttribute="bottom" secondItem="T2C-qD-wT7" secondAttribute="bottom" id="G5q-o7-4DE"/>
+                                    <constraint firstAttribute="trailing" secondItem="XZ4-91-qGO" secondAttribute="trailing" id="LOl-mp-vjd"/>
+                                    <constraint firstItem="XZ4-91-qGO" firstAttribute="top" secondItem="Sq9-3b-RXo" secondAttribute="top" id="ONG-u5-prj"/>
+                                    <constraint firstItem="T2C-qD-wT7" firstAttribute="top" secondItem="Sq9-3b-RXo" secondAttribute="top" id="OgD-Mf-fPb"/>
+                                    <constraint firstAttribute="height" constant="323" id="oH3-UT-dMp"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aA2-vH-Hzf">
+                                <rect key="frame" x="0.0" y="429" width="375" height="238"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iY3-Z2-nJW" customClass="CustomView" customModule="Star_Wars_app" customModuleProvider="target">
+                                        <rect key="frame" x="107.5" y="89" width="160" height="60"/>
+                                        <color key="backgroundColor" red="0.003796722041" green="0.00049742078410000003" blue="0.26978608970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="160" id="Qcs-V1-ZST"/>
+                                            <constraint firstAttribute="height" constant="60" id="klM-Uh-aZk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="18"/>
+                                        <state key="normal" title="Home World">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="homeWorldBtnWasPressed:" destination="Poo-RL-21j" eventType="touchUpInside" id="bGz-MQ-Vt2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="iY3-Z2-nJW" firstAttribute="centerX" secondItem="aA2-vH-Hzf" secondAttribute="centerX" id="SSl-nX-saC"/>
+                                    <constraint firstItem="iY3-Z2-nJW" firstAttribute="centerY" secondItem="aA2-vH-Hzf" secondAttribute="centerY" id="cyX-Ke-SAn"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qJq-DE-pDO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sZK-ZY-xuU" firstAttribute="leading" secondItem="qJq-DE-pDO" secondAttribute="leading" id="63X-Lm-ffr"/>
+                            <constraint firstItem="Sq9-3b-RXo" firstAttribute="leading" secondItem="VwZ-UX-Wnd" secondAttribute="leadingMargin" id="73g-fb-OER"/>
+                            <constraint firstItem="Sq9-3b-RXo" firstAttribute="top" secondItem="sZK-ZY-xuU" secondAttribute="bottom" constant="16" id="DGT-ME-WWg"/>
+                            <constraint firstItem="Sq9-3b-RXo" firstAttribute="centerX" secondItem="VwZ-UX-Wnd" secondAttribute="centerX" id="EJD-8Z-HDe"/>
+                            <constraint firstItem="aA2-vH-Hzf" firstAttribute="leading" secondItem="qJq-DE-pDO" secondAttribute="leading" id="FOs-ct-HH8"/>
+                            <constraint firstItem="aA2-vH-Hzf" firstAttribute="top" secondItem="Sq9-3b-RXo" secondAttribute="bottom" id="GyV-WG-xEC"/>
+                            <constraint firstItem="0Tf-v7-75B" firstAttribute="leading" secondItem="VwZ-UX-Wnd" secondAttribute="leading" id="Hj2-x4-bFh"/>
+                            <constraint firstItem="0Tf-v7-75B" firstAttribute="trailing" secondItem="VwZ-UX-Wnd" secondAttribute="trailing" id="HqD-od-jmr"/>
+                            <constraint firstItem="qJq-DE-pDO" firstAttribute="bottom" secondItem="aA2-vH-Hzf" secondAttribute="bottom" id="JRU-ki-B2d"/>
+                            <constraint firstAttribute="bottom" secondItem="0Tf-v7-75B" secondAttribute="bottom" id="KZ2-Sm-ozM"/>
+                            <constraint firstItem="0Tf-v7-75B" firstAttribute="top" secondItem="VwZ-UX-Wnd" secondAttribute="top" id="S8p-xQ-Kr2"/>
+                            <constraint firstItem="sZK-ZY-xuU" firstAttribute="top" secondItem="qJq-DE-pDO" secondAttribute="top" id="WFr-V2-3J8"/>
+                            <constraint firstAttribute="trailing" secondItem="sZK-ZY-xuU" secondAttribute="trailing" id="Z7i-Kd-4pt"/>
+                            <constraint firstItem="qJq-DE-pDO" firstAttribute="trailing" secondItem="aA2-vH-Hzf" secondAttribute="trailing" id="evz-9h-pbA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="birthYearLbl" destination="gsK-y9-7iZ" id="6hd-gR-x2G"/>
+                        <outlet property="eyeColorLbl" destination="4nG-xL-DyU" id="Ujp-Kr-4vU"/>
+                        <outlet property="gender" destination="7Gd-0S-KCd" id="bPH-we-HTf"/>
+                        <outlet property="heightLbl" destination="Gzy-1y-thv" id="qLc-NB-oYo"/>
+                        <outlet property="heirColorLbl" destination="mDZ-Bs-oT7" id="vW6-Na-umq"/>
+                        <outlet property="massLbl" destination="nLk-bU-4L8" id="CxT-fS-xYJ"/>
+                        <outlet property="nameLbl" destination="Wh5-Wk-dL7" id="IDG-dw-8pE"/>
+                        <outlet property="skinColorLbl" destination="tvJ-XP-6dR" id="QHR-KH-gdR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wMg-Qv-dgq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" id="Gah-XP-L5i" userLabel="Parrametrs">
+                    <rect key="frame" x="0.0" y="0.0" width="155.5" height="344"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8q-TU-PZ4">
+                            <rect key="frame" x="0.0" y="0.0" width="155.5" height="32"/>
+                            <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="24"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mass" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Njl-Zq-BHM">
+                            <rect key="frame" x="0.0" y="52" width="155.5" height="32"/>
+                            <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="24"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hair Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3j-KC-dBa">
+                            <rect key="frame" x="0.0" y="104" width="155.5" height="32"/>
+                            <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="24"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skin Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61t-9K-QrF">
+                            <rect key="frame" x="0.0" y="156" width="155.5" height="32"/>
+                            <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="24"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eye Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cz-0X-5b6">
+                            <rect key="frame" x="0.0" y="208" width="155.5" height="32"/>
+                            <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="24"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birth Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Grx-t7-oEp">
+                            <rect key="frame" x="0.0" y="260" width="155.5" height="32"/>
+                            <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="24"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rtg-jQ-Tsz">
+                            <rect key="frame" x="0.0" y="312" width="155.5" height="32"/>
+                            <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="24"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="1EB-Ed-osl"/>
+                </stackView>
+            </objects>
+            <point key="canvasLocation" x="932" y="134"/>
+        </scene>
+        <!--Home WorldVC-->
+        <scene sceneID="BHp-dj-ahW">
+            <objects>
+                <viewController storyboardIdentifier="HomeWorldVC" id="W6r-IM-gDH" customClass="HomeWorldVC" customModule="Star_Wars_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x2E-k1-v07">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Untitled design" translatesAutoresizingMaskIntoConstraints="NO" id="E7U-fe-if8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B1v-ew-hUU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="e2w-e1-RiH">
+                                        <rect key="frame" x="16" y="28.5" width="343" height="33"/>
+                                        <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUd-w8-4jX">
+                                        <rect key="frame" x="8" y="27.5" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="35" id="HCc-0f-EZz"/>
+                                            <constraint firstAttribute="height" constant="35" id="otA-cP-Za7"/>
+                                        </constraints>
+                                        <state key="normal" image="Untitled design-2_preview_rev_1"/>
+                                        <connections>
+                                            <action selector="backBtnWasPressed:" destination="W6r-IM-gDH" eventType="touchUpInside" id="Bu2-2s-4V2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.003796722041" green="0.00049742078410000003" blue="0.26978608970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="e2w-e1-RiH" firstAttribute="centerY" secondItem="B1v-ew-hUU" secondAttribute="centerY" id="EoI-jx-MZ9"/>
+                                    <constraint firstAttribute="height" constant="90" id="QIH-GI-RAx"/>
+                                    <constraint firstAttribute="trailing" secondItem="e2w-e1-RiH" secondAttribute="trailing" constant="16" id="R12-Cn-jd6"/>
+                                    <constraint firstItem="e2w-e1-RiH" firstAttribute="centerX" secondItem="B1v-ew-hUU" secondAttribute="centerX" id="TA7-O5-tnj"/>
+                                    <constraint firstItem="e2w-e1-RiH" firstAttribute="leading" secondItem="B1v-ew-hUU" secondAttribute="leading" constant="16" id="Wpn-zD-KEf"/>
+                                    <constraint firstItem="NUd-w8-4jX" firstAttribute="centerY" secondItem="B1v-ew-hUU" secondAttribute="centerY" id="nPj-Ss-HGA"/>
+                                    <constraint firstItem="NUd-w8-4jX" firstAttribute="leading" secondItem="B1v-ew-hUU" secondAttribute="leading" constant="8" id="r4t-Xr-p1H"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xP4-V9-rPB">
+                                <rect key="frame" x="16" y="106" width="343" height="323"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="2as-kp-4DM">
+                                        <rect key="frame" x="208" y="0.0" width="135" height="323"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="172" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4VZ-et-YHH">
+                                                <rect key="frame" x="0.0" y="0.0" width="135" height="29"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="20"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="77" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GK5-n7-Bzb">
+                                                <rect key="frame" x="0.0" y="49" width="135" height="29"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="20"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blond" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t9Q-D6-oqu">
+                                                <rect key="frame" x="0.0" y="98" width="135" height="29"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="20"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fair" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fI-zP-9Ys">
+                                                <rect key="frame" x="0.0" y="147" width="135" height="29"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="20"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEC-Ai-17f">
+                                                <rect key="frame" x="0.0" y="196" width="135" height="29"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="20"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11BBY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8wh-pb-iqC">
+                                                <rect key="frame" x="0.0" y="245" width="135" height="29"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="20"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Male" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19C-xe-MRg">
+                                                <rect key="frame" x="0.0" y="294" width="135" height="29"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="135" id="D0A-li-y3b"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="20"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="NT5-5P-UZd">
+                                        <rect key="frame" x="0.0" y="0.0" width="135" height="323"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rotation Period" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Cn3-jT-6v5">
+                                                <rect key="frame" x="0.0" y="0.0" width="135" height="29"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="20"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Orbital Period" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="7jY-NO-Xff">
+                                                <rect key="frame" x="0.0" y="49" width="135" height="29"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="20"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diameter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="fev-IG-WC7">
+                                                <rect key="frame" x="0.0" y="98" width="135" height="29"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="20"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Climate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="pte-W0-xiH">
+                                                <rect key="frame" x="0.0" y="147" width="135" height="29"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="20"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grivaty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="jph-C7-yP9">
+                                                <rect key="frame" x="0.0" y="196" width="135" height="29"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="20"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terrian" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="hMg-a8-aHM">
+                                                <rect key="frame" x="0.0" y="245" width="135" height="29"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="20"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Population" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="FGA-3M-5DO">
+                                                <rect key="frame" x="0.0" y="294" width="135" height="29"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="135" id="vPu-ez-gVi"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="20"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="323" id="6d0-bR-op7"/>
+                                    <constraint firstItem="NT5-5P-UZd" firstAttribute="leading" secondItem="xP4-V9-rPB" secondAttribute="leading" id="9zc-6S-XCy"/>
+                                    <constraint firstAttribute="bottom" secondItem="2as-kp-4DM" secondAttribute="bottom" id="Bhh-AD-O0H"/>
+                                    <constraint firstItem="2as-kp-4DM" firstAttribute="top" secondItem="xP4-V9-rPB" secondAttribute="top" id="Jwt-L9-kvo"/>
+                                    <constraint firstItem="NT5-5P-UZd" firstAttribute="top" secondItem="xP4-V9-rPB" secondAttribute="top" id="L2W-rP-LaB"/>
+                                    <constraint firstAttribute="trailing" secondItem="2as-kp-4DM" secondAttribute="trailing" id="tCF-gw-22G"/>
+                                    <constraint firstAttribute="bottom" secondItem="NT5-5P-UZd" secondAttribute="bottom" id="ul3-IA-rqZ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YhD-zi-wXT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="E7U-fe-if8" secondAttribute="bottom" id="3j3-Hf-EL1"/>
+                            <constraint firstItem="E7U-fe-if8" firstAttribute="leading" secondItem="YhD-zi-wXT" secondAttribute="leading" id="8Xr-0U-Svw"/>
+                            <constraint firstItem="E7U-fe-if8" firstAttribute="trailing" secondItem="YhD-zi-wXT" secondAttribute="trailing" id="D7W-bO-rJr"/>
+                            <constraint firstItem="B1v-ew-hUU" firstAttribute="top" secondItem="YhD-zi-wXT" secondAttribute="top" id="F1F-Vt-Pqd"/>
+                            <constraint firstItem="B1v-ew-hUU" firstAttribute="leading" secondItem="YhD-zi-wXT" secondAttribute="leading" id="RJb-qw-WRg"/>
+                            <constraint firstItem="xP4-V9-rPB" firstAttribute="centerX" secondItem="x2E-k1-v07" secondAttribute="centerX" id="UH1-k5-3Zt"/>
+                            <constraint firstItem="xP4-V9-rPB" firstAttribute="top" secondItem="B1v-ew-hUU" secondAttribute="bottom" constant="16" id="WgV-jx-NpH"/>
+                            <constraint firstAttribute="trailing" secondItem="B1v-ew-hUU" secondAttribute="trailing" id="xXV-X6-oca"/>
+                            <constraint firstItem="E7U-fe-if8" firstAttribute="top" secondItem="x2E-k1-v07" secondAttribute="top" id="xtX-gf-I00"/>
+                            <constraint firstItem="xP4-V9-rPB" firstAttribute="leading" secondItem="x2E-k1-v07" secondAttribute="leadingMargin" id="z7I-rG-sYN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="climateLbl" destination="4fI-zP-9Ys" id="VQA-xG-Owk"/>
+                        <outlet property="diameterLbl" destination="t9Q-D6-oqu" id="Rng-GX-nhb"/>
+                        <outlet property="grivatyLbl" destination="BEC-Ai-17f" id="1Xz-6O-Oye"/>
+                        <outlet property="nameLbl" destination="e2w-e1-RiH" id="PJe-hY-xbs"/>
+                        <outlet property="orbitalPeriod" destination="GK5-n7-Bzb" id="ZkX-NN-k7d"/>
+                        <outlet property="populationLbl" destination="19C-xe-MRg" id="yMe-gu-JzT"/>
+                        <outlet property="rotoationPeriod" destination="4VZ-et-YHH" id="pR6-Yd-yLh"/>
+                        <outlet property="terrainLbl" destination="8wh-pb-iqC" id="kxO-Qs-Hsf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qd3-hv-6Kp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1766" y="134"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Unknown_preview_rev_1" width="72.5" height="43.5"/>
+        <image name="Untitled design" width="540" height="960"/>
+        <image name="Untitled design-2_preview_rev_1" width="250" height="250"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
